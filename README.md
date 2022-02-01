@@ -49,7 +49,7 @@ In this README and this GitHub repository you will find all the three different 
 
 ### Kinematic model and definition of the robot
 
-At the beginning of the design of these different programs, the main difficulty was to determine the kinematic model of this robot. This kinematic model was implemented in the code in the form of a matrix (which you can find on pages 168-169 of this [thesis](https://www.researchgate.net/publication/272673531_Modeling_and_Adaptive_Control_of_an_Omni-Mecanum-Wheeled_Robot) that I had to modify and arrange in order to make it functional with MATLAB.
+At the beginning of the design of these different programs, the main difficulty was to determine the kinematic model of this robot. This kinematic model was implemented in the code in the form of a matrix (which you can find on pages 168-169 of this [thesis](https://www.researchgate.net/publication/272673531_Modeling_and_Adaptive_Control_of_an_Omni-Mecanum-Wheeled_Robot)) that I had to modify and arrange in order to make it functional with MATLAB.
 
 This is why, at the beginning of the program, you will find the definition of the coordinates of the corners of the robot as well as its centre of gravity at the origin of the program (i.e. centred on the reference frame) and other points or lengths... All the points and angles defined at the beginning of the program are necessary for the modelling of each robot movement thereafter.
 
