@@ -22,7 +22,7 @@ There are two categories of wheeled robots :
 
 Examples : Amazon Kiva, HUSQVARNA Automower 420...
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/AmazonKIVA.jfif?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/AmazonKIVA.jfif?raw=true)
 
 _Figure 1: Amazon Kiva robot._
 
@@ -30,7 +30,7 @@ _Figure 1: Amazon Kiva robot._
 
 Examples : Robotino, KUKA omniMove, KUKA youBot, KUKA KMR iiwa...
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/KUKA_Omnimove_Header.jpg?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/KUKA_Omnimove_Header.jpg?raw=true)
 
 _Figure 2: KUKA omniMove robot._
 
@@ -53,9 +53,9 @@ At the beginning of the design of these different programs, the main difficulty 
 
 This is why, at the beginning of the program, you will find the definition of the coordinates of the corners of the robot as well as its centre of gravity at the origin of the program (i.e. centred on the reference frame) and other points or lengths... All the points and angles defined at the beginning of the program are necessary for the modelling of each robot movement thereafter.
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program1.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program1.png?raw=true)
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program2.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program2.png?raw=true)
 
 _Figure 3: Initialization of variables._
 
@@ -66,7 +66,7 @@ _Figure 3: Initialization of variables._
 
 As the robot can move in any direction in space, it was necessary to separate its movements into different cases taking into account its angle (its orientation with respect to the abscissa axis). For the orientation of the robot I will work with the trigonometric circle.
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Four-quadrants-circle.jpg?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Four-quadrants-circle.jpg?raw=true)
 
 _Figure 4: Trigonometric circle._
 
@@ -80,19 +80,19 @@ In each of the 4 cases, the procedure is the same. That is why I will show you o
 
 I then start by calculating the coordinates of each endpoint (at the end of the robot's movement).
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program3.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program3.png?raw=true)
 
 _Figure 5: Updating the coordinates of the points._
 
 Then I update very regularly (thanks to a constant step defined previously) the shape of the robot by using set functions, it allows me to keep the shape of the robot and thus to prevent it from deforming during a movement (we keep the same lengths and we keep the perpendicularity between the different sides of the robot).
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program4.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program4.png?raw=true)
 
 _Figure 6: Update of the robot representation._
 
 In this README, I only present the update of the robot representation for an initial orientation between 0 and pi/2, it works the same way for the 3 other cases.
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program5.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program5.png?raw=true)
 
 _Figure 7: Presentation of the case where the robot is oriented between 0 and pi/2 (quadrant I)._
 
@@ -103,11 +103,11 @@ _Figure 7: Presentation of the case where the robot is oriented between 0 and pi
 
 In this case, we work as previously presented for a zero rotation speed by calculating the new coordinates of each point and then updating the graphic representation of the robot.
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program6.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program6.png?raw=true)
 
 _Figure 8: Updating the coordinates of the points._
 
-![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/Program7.png?raw=true)
+![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program7.png?raw=true)
 
 _Figure 9: Update of the robot representation._
 
