@@ -24,7 +24,7 @@ Examples : Amazon Kiva, HUSQVARNA Automower 420...
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/AmazonKIVA.jfif?raw=true)
 
-_Figure 1: Amazon Kiva robot._
+_Figure 1 : Amazon Kiva robot._
 
 * Holonomous : robots using omnidirectional wheels, which can move in a straight line and in all directions. in all directions. Robots in this category have full 360 degree freedom of movement.
 
@@ -32,7 +32,7 @@ Examples : Robotino, KUKA omniMove, KUKA youBot, KUKA KMR iiwa...
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/KUKA_Omnimove_Header.jpg?raw=true)
 
-_Figure 2: KUKA omniMove robot._
+_Figure 2 : KUKA omniMove robot._
 
 In the context of the development of industry 4.0, I will focus on the forward and inverse kinematic of a holonomic mobile robot (simulation on MATLAB, programming in C++) in order to design and concept a holonomic robot intended for a future application in logistics. 
 
@@ -57,7 +57,7 @@ This is why, at the beginning of the program, you will find the definition of th
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program2.png?raw=true)
 
-_Figure 3: Initialization of variables._
+_Figure 3 : Initialization of variables._
 
 [Table of Contents](#table_of_contents)
 
@@ -68,7 +68,7 @@ As the robot can move in any direction in space, it was necessary to separate it
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Four-quadrants-circle.jpg?raw=true)
 
-_Figure 4: Trigonometric circle._
+_Figure 4 : Trigonometric circle._
 
 I distinguish 2 main cases concerning the rotation speed of the robot (if it is zero or not) and in each of these 2 main cases there are 4 other cases depending on its initial orientation (at the beginning of the movement) if the rotation speed is equal to 0 and only one otherwise.
 
@@ -82,19 +82,19 @@ I then start by calculating the coordinates of each endpoint (at the end of the 
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program3.png?raw=true)
 
-_Figure 5: Updating the coordinates of the points._
+_Figure 5 : Updating the coordinates of the points._
 
 Then I update very regularly (thanks to a constant step defined previously) the shape of the robot by using set functions, it allows me to keep the shape of the robot and thus to prevent it from deforming during a movement (we keep the same lengths and we keep the perpendicularity between the different sides of the robot).
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program4.png?raw=true)
 
-_Figure 6: Update of the robot representation._
+_Figure 6 : Update of the robot representation._
 
 In this README, I only present the update of the robot representation for an initial orientation between 0 and pi/2, it works the same way for the 3 other cases.
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program5.png?raw=true)
 
-_Figure 7: Presentation of the case where the robot is oriented between 0 and pi/2 (quadrant I)._
+_Figure 7 : Presentation of the case where the robot is oriented between 0 and pi/2 (quadrant I)._
 
 
 [Table of Contents](#table_of_contents)
@@ -105,11 +105,11 @@ In this case, we work as previously presented for a zero rotation speed by calcu
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program6.png?raw=true)
 
-_Figure 8: Updating the coordinates of the points._
+_Figure 8 : Updating the coordinates of the points._
 
 ![alt text](https://github.com/Clerbout-Francois/Kinematics_holonomic_robot_MATLAB/blob/main/images_kinematics_holonomic_robot_MATLAB/Program7.png?raw=true)
 
-_Figure 9: Update of the robot representation._
+_Figure 9 : Update of the robot representation._
 
 
 [Table of Contents](#table_of_contents)
